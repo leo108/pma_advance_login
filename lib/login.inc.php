@@ -20,6 +20,9 @@ if(!defined('PMA_ADVANCE_LOGIN')){
     <div class="container">
     <a href="../url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F" target="_blank" class="logo"><img src="../themes/pmahomme/img/logo_right.png" id="imLogo" name="imLogo" alt="phpMyAdmin" border="0" /></a>
        <h1>欢迎使用 <bdo dir="ltr" lang="en">phpMyAdmin</bdo></h1>
+       <?php if(isset($msg)):?>
+       <div class="error"><img src="../themes/dot.gif" class="icon ic_s_error"><?=$msg;?></div>
+       <?php endif;?>
     <br />
     <!-- Login form -->
     <form method="post" action="index.php" name="login_form" class="disableAjax login">

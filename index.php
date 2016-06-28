@@ -6,6 +6,12 @@ if (strpos($_SERVER['REQUEST_URI'], 'pma_advance_login') !== false) {
 define('PMA_ADVANCE_LOGIN', 1);
 session_name('PmaAdvanceLogin');
 session_start();
+if (isset($_REQUEST['logout'])) {
+    session_destroy();
+    include './lib/login.inc.php';
+    exit;
+}
+
 if (!isset($_SESSION['user'])){
     if (empty($_POST)) {
         include './lib/login.inc.php';
