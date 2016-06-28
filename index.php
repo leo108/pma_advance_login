@@ -1,4 +1,8 @@
 <?php
+if (strpos($_SERVER['REQUEST_URI'], 'pma_advance_login') !== false) {
+    echo 'You must rename this dir to avoid burst attack';
+    exit;
+}
 define('PMA_ADVANCE_LOGIN', 1);
 session_name('PmaAdvanceLogin');
 session_start();

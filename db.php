@@ -1,4 +1,8 @@
 <?php
+if(!defined('PMA_ADVANCE_LOGIN')){
+    echo "Attack";
+    exit;
+}
 return array(
     'localhost' => array(
         'host' => '127.0.0.1',

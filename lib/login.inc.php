@@ -18,7 +18,7 @@ if(!defined('PMA_ADVANCE_LOGIN')){
 </head>
 <body id='loginform'><div id="page_content">
     <div class="container">
-    <a href="./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F" target="_blank" class="logo"><img src="../themes/pmahomme/img/logo_right.png" id="imLogo" name="imLogo" alt="phpMyAdmin" border="0" /></a>
+    <a href="../url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F" target="_blank" class="logo"><img src="../themes/pmahomme/img/logo_right.png" id="imLogo" name="imLogo" alt="phpMyAdmin" border="0" /></a>
        <h1>欢迎使用 <bdo dir="ltr" lang="en">phpMyAdmin</bdo></h1>
     <br />
     <!-- Login form -->
